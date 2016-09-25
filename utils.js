@@ -74,9 +74,9 @@ module.exports = {
     },
 
     horoscopeStringBuilder: function(/*Array*/indexes, /*String*/horoscope, name, sign) {
-        horoscope = "Hello " + name + "! Looks like you are a " + sign + ". Here is your " +
-            "personalized horoscope! ";
-        for(var i = 0; i < indexes.length; i++) {
+        horoscope = "Hello " + name + ", here is your personalized horoscope!</br></br>"
+            + "Your sign: " + sign + "</br></br>";
+        for(var i = 0; i < 8; i++) {
             horoscope += sentences[indexes[i]].text;
         }
         return horoscope;

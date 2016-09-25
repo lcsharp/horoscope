@@ -1,50 +1,50 @@
 [
   {
-    "name": "Aquarius",
+    "name": "Aquarius (Jan. 20-Feb. 18)",
     "date": "0120"
   },
   {
-    "name": "Pisces",
+    "name": "Pisces (Feb. 19-March 20)",
     "date": "0219"
   },
   {
-    "name": "Aries",
+    "name": "Aries (March 21-April 19)",
     "date": "0321"
   },
   {
-    "name": "Taurus",
+    "name": "Taurus (April 20-May 20)",
     "date": "0420"
   },
   {
-    "name": "Gemini",
+    "name": "Gemini (May 21-June 20)",
     "date": "0521"
   },
   {
-    "name": "Cancer",
+    "name": "Cancer (June 21-July 22)",
     "date": "0621"
   },
   {
-    "name": "Leo",
+    "name": "Leo (July 23-Aug. 22)",
     "date": "0723"
   },
   {
-    "name": "Virgo",
+    "name": "Virgo (Aug. 23-Sept. 22)",
     "date": "0823"
   },
   {
-    "name": "Libra",
+    "name": "Libra (Sept. 23-Oct. 22)",
     "date": "0923"
   },
   {
-    "name": "Scorpio",
+    "name": "Scorpio (Oct. 23-Nov. 21)",
     "date": "1023"
   },
   {
-    "name": "Sagittarius",
+    "name": "Sagittarius (Nov. 22-Dec. 21)",
     "date": "1122"
   },
   {
-    "name": "Capricorn",
+    "name": "Capricorn (Dec. 22-Jan. 19)",
     "date": "1222"
   }
 ]

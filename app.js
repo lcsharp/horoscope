@@ -11,7 +11,10 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 console.log(__dirname);
 
-// use to serve up the bootstrap functions
+// serve up jquery functions
+app.use(express.static("node_modules/jquery/dist"));
+
+// serve up the bootstrap functions
 app.use(express.static("node_modules/bootstrap/dist"));
 
 // get the app environment from Cloud Foundry
@@ -54,10 +57,17 @@ app.get("/horoscope", function(req, res) {
     res.render("horoscope", { horoscope: horoscope })
 });
 
-// renders the about page
+// renders the about page via the /about route
 app.get("/about", function(req, res) {
     res.render("about", {
         title: "About the Signs"
+    });
+});
+
+// renders the about page
+app.get("/history", function(req, res) {
+    res.render("history", {
+        title: "History of the Signs"
     });
 });
 
