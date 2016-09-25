@@ -1,0 +1,24 @@
+extends layout
+
+block link
+    -var selected= 'Home';
+
+block content
+    h1 Welcome to the Horoscope Generator
+    p(style='padding-left:40px;')
+        | To have your own personalized horoscope generated
+        br
+        | enter your name and birthday into the fields below
+        br
+        | and click the "Get Your Horoscope" button.
+    br
+
+    form(method="post")
+        .col-xs-4
+            .form-group
+                label(for="name")  Name:
+                input.form-control(id="name", name="name", type="text", placeholder="Enter your name")
+            .form-group
+                label(for="birthday")  Birthday:
+                input.form-control(id="birthday", name="birthday", type="text", placeholder="Enter your birthday")
+            button.btn.btn-primary(type="submit") Get Your Horoscope

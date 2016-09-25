@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Aquarius",
+    "date": "0120"
+  },
+  {
+    "name": "Pisces",
+    "date": "0219"
+  },
+  {
+    "name": "Aries",
+    "date": "0321"
+  },
+  {
+    "name": "Taurus",
+    "date": "0420"
+  },
+  {
+    "name": "Gemini",
+    "date": "0521"
+  },
+  {
+    "name": "Cancer",
+    "date": "0621"
+  },
+  {
+    "name": "Leo",
+    "date": "0723"
+  },
+  {
+    "name": "Virgo",
+    "date": "0823"
+  },
+  {
+    "name": "Libra",
+    "date": "0923"
+  },
+  {
+    "name": "Scorpio",
+    "date": "1023"
+  },
+  {
+    "name": "Sagittarius",
+    "date": "1122"
+  },
+  {
+    "name": "Capricorn",
+    "date": "1222"
+  }
+]
