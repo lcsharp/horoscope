@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 640M
+  instances: 1
+  domain: mybluemix.net
+  name: Horoscope
+  host: horoscope
+  disk_quota: 1024M
+  env:
+    BLUEMIX_APP_MGMT_ENABLE: devconsole+shell+inspector
+    NODE_ENV: development

@@ -14,11 +14,11 @@ block content
     br
 
     form(method="post")
-        .col-xs-4
+        .col-xs-8
             .form-group
                 label(for="name")  Name:
-                input.form-control(id="name", name="name", type="text", placeholder="Enter your name")
+                input.form-control(id="name", name="name", type="name", required="true", placeholder="Enter your name")
             .form-group
                 label(for="birthday")  Birthday:
-                input.form-control(id="birthday", name="birthday", type="text", placeholder="Enter your birthday")
+                input.form-control(id="birthday", name="birthday", type="date", required="true", placeholder="Enter your birthday")
             button.btn.btn-primary(type="submit") Get Your Horoscope
