@@ -19,11 +19,11 @@ module.exports = {
     },
 
     lookUpSign: function (date) {
-        var sign = "Invalid date";
+        var sign = "Unknown Sign";
 
         // TODO This check is hacky. Need to get around it.
         if(date <= 119) {
-            return signs[11].name;
+            return signs[signs.length - 1].name;
         }
         for(var i = signs.length - 1; i >= 0; i--) {
             if(signs[i].date - date <= 0) {

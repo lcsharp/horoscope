@@ -5,3 +5,7 @@ body {
 .main-content {
     padding: 40px 15px;
 }
+
+p {
+    max-width: 350px; /* change to your preferences */
+}

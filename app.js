@@ -48,8 +48,13 @@ app.get("/home", function(req, res) {
 
 // posts the information gathered from the home page and creates the horoscope
 app.post("/home", function (req, res) {
-    horoscope = utils.buildHoroscopeText(req.body.name, req.body.birthday);
-    res.redirect("/horoscope");
+    if(!req.body.name || req.body.name === "" || !req.body.birthday || req.body.birthday === "" ){
+        res.redirect("/home");
+    }
+    else {
+        horoscope = JSON.stringify(utils.buildHoroscopeText(req.body.name, req.body.birthday));
+        res.redirect("/horoscope");
+    }
 });
 
 // renders the horoscope view in the /horoscope route
