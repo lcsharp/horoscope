@@ -111,8 +111,8 @@ module.exports = {
      * @returns {Number}
      */
     getDateAsInteger: function (/*String*/birthday) {
-        var birthdayParts = birthday.split("-");
-        return parseInt(birthdayParts[1] + birthdayParts[2]);
+        var birthdayParts = birthday.split("/");
+        return parseInt(birthdayParts[0] + birthdayParts[1]);
     },
 
     /**

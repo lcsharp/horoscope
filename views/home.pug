@@ -11,6 +11,18 @@ block content
         | the "Get Your Horoscope" button.
     br
 
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js')
+    style(type='text/css').
+        /**
+        * Override feedback icon position
+        * See http://formvalidation.io/examples/adjusting-feedback-icon-position/
+        */
+        #eventForm .form-control-feedback {
+            top: 0;
+            right: -15px;
+        }
     form(method="post")
         .col-xs-8
             .form-group
@@ -18,5 +30,18 @@ block content
                 input.form-control(id="name", name="name", type="text", required="true", placeholder="Enter your name")
             .form-group
                 label(for="birthday")  Birthday:
-                input.form-control(id="birthday", name="birthday", type="date", required="true", placeholder="Enter your birthday")
+                #datePicker.input-group.date
+                    input.form-control(id="birthday", name="birthday", type='text', required="true", placeholder="Enter your birthday")
+                    span.input-group-addon
+                        span.glyphicon.glyphicon-calendar
             button.btn.btn-primary(type="submit") Get Your Horoscope
+
+    // The following function, which creates the datepicker, was taken from http://formvalidation.io/examples/bootstrap-datepicker/
+    // and uses the cdnjs cloudflare datepicker
+    script.
+        $(document).ready(function() {
+            $('#datePicker')
+                .datepicker({
+                    format: 'mm/dd/yyyy'
+                })
+        });
